@@ -30,6 +30,6 @@ Trello es el registro principal. Copiá estos campos a la tarjeta y mantenelos a
 - Limitaciones, riesgos, documentos y tarjetas relacionadas: [No aplica o enlaces]
 ```
 
-No documentes como realizado algo solo propuesto, investigado o pendiente. Si no hay evidencia para una validación, impacto o diferencia de alcance, dejá el pendiente visible o indicá `No aplica` únicamente cuando corresponda.
+No documentes como realizado algo solo propuesto, investigado o pendiente. Si no hay evidencia para una validación, impacto o diferencia de alcance, dejá el pendiente visible o indicá `No aplica` únicamente cuando corresponda. Diferenciá explícitamente incidencia reportada, validación realizada, decisión acordada y limitación pendiente. Si el resultado contradice AF o ATF, informalo como diferencia de alcance o incumplimiento; no lo resuelvas en el comentario.
 
 Si el usuario solicita una copia local, proponé crear `Sistema_IDTarjeta_CambioImplementado.md` en la carpeta configurada para comentarios y esperá confirmación antes de escribirla.

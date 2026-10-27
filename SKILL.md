@@ -5,7 +5,7 @@ description: "Gestiona el ciclo documental de tarjetas de cambio: ATF iterativos
 
 # WorkIS
 
-**Versión:** `v0.1.0`
+**Versión:** `v0.2.0`
 
 WorkIS gestiona el análisis y la documentación de cambios para uno o varios sistemas. Identifica primero el proyecto y el modo de trabajo; solicita únicamente los datos mínimos que falten.
 
@@ -15,10 +15,27 @@ Los perfiles guardan la configuración estable de cada sistema: nombre, rutas de
 
 Guardá los perfiles localmente, fuera del repositorio de WorkIS y sin incluir rutas personales en Git. En Windows, usá `%USERPROFILE%\.workis\projects.local.json`; en otros sistemas, `~/.workis/projects.local.json`.
 
+## Marco documental MAF-ISG
+
+Los modos `atf` y `estimar` deben aplicar el marco completo de MAF-ISG descrito en [referencias operativas](references/maf-isg.md). Es obligatorio conservar trazabilidad, estados de evidencia, versiones independientes, historial y aprobaciones identificables. No copies la metodología dentro de los entregables: aplicala.
+
+La documentación se carga de forma selectiva según el modo:
+
+| Trabajo | Lectura requerida además de las fuentes |
+|---|---|
+| AF | Metodología, plantilla AF, validación, trazabilidad e instructivo de gestión AF |
+| ATF | Metodología, plantilla ATF, validación y trazabilidad |
+| ATF con impacto de datos | Lo anterior más guía de base de datos |
+| Estimación Frontend | ATF aprobado y guía de estimación |
+| Comentario de Trello | Fuente seleccionada y guía de comentarios |
+
+Si una indicación explícita del usuario contradice una plantilla o guía, aplicá la indicación del usuario y registrá la excepción en el historial del documento afectado.
+
 ## Elegir modo
 
 | Pedido | Modo | Referencia |
 |---|---|---|
+| Crear, revisar o versionar un AF | `af` | [Marco MAF-ISG](references/maf-isg.md) |
 | Crear, revisar o versionar un ATF | `atf` | [ATF](references/atf.md) |
 | Estimar horas y checklist de frontend | `estimar` | [Estimación](references/estimacion-frontend.md) |
 | Comentario de Trello desde una rama | `comentario-rama` | [Comentarios](references/comentarios-trello.md) |
